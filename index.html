@@ -1,13 +1,46 @@
 <!DOCTYPE html>
+
+<!--
+TODO:
+	- Add multiple image sizes for different screen sizes
+
+NOTES:
+    - The base color is cornflower blue (#6495ed)
+	- Also consider #ccddff for a lighter blue
+-->
+
 <html>
 <head>
-	<title>Wedding Invitation for Amy and Brendon Bown</title>
+	<title>Wedding Invitation - Amy and Brendon Bown</title>
+
+	<!-- meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- favicon -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-	<p></p>
+	<section class="picture-block">
+		<div class="picture-block__image half-screen portrait">
+			<img class="portrait" src="/images/profile-portrait.jpg" alt="A profile portrait of Amy and Brendon Bown">
+		</div>
+		<div class="picture-block__image half-screen portrait">
+			<img class="portrait" src="/images/ring.jpg" alt="A close-up of the engagement ring">
+		</div>
+		<h1 class="picture-block__banner">Amy and Brendon Bown</h1>
+		<div class="picture-block__image full-screen">
+			<img class="landscape" src="/images/cherry-blossoms.jpg" alt="Amy and Brendon under a cherry tree">
+		</div>
+	</section>
 </body>
 </html>

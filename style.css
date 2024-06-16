@@ -1,0 +1,43 @@
+:root {
+  --blue-dark-200: #0D2859;
+  --blue-dark-100: #0E347C;
+  --blue: #6495ED;
+  --blue-light-100: #CCDDFF;
+  --blue-light-200: #EBF2FF;
+}
+
+body {
+  background-color: var(--blue-light-200);
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: var(--blue-dark-100);
+}
+
+.picture-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  box-shadow: 0 2px 10px 0 var(--blue-dark-200);
+}
+
+.picture-block__image {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.picture-block__banner, .picture-block__image.full-screen {
+  grid-column: span 2;
+}
+
+.picture-block__banner {
+  font-size: 2rem;
+  font-family: "Playwrite US Trad", cursive;
+  text-align: center;
+  line-height: 150%;
+  padding: 1rem;
+  box-shadow: 0 0 10px 2px var(--blue-light-200);
+/*   box-shadow: 0 0 5px 1px var(--blue-dark-200); */
+  
+  z-index: 2;
+}
