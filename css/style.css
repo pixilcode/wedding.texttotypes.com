@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6, p, li {
 		--page-width: 5in;
     --page-height: 7in;
 	}
+  
+  @page {
+    size: var(--page-width) var(--page-height);
+    margin: 0;
+  }
 
 	body {
 		width: var(--page-width);
