@@ -1,0 +1,47 @@
+
+header, main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 10vw;
+  gap: 1rem;
+}
+
+.header__image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 10rem;
+  width: 10rem;
+  margin: 0.5rem;
+  box-shadow: 0 2.5px 5px 2px var(--blue-dark-200);
+}
+
+header p {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+header h1 {
+  font-family: var(--cursive-font);
+  text-align: center;
+  font-size: 3rem;
+  line-height: 100%;
+  padding: 0.5rem 0;
+  letter-spacing: -0.05rem;
+}
+
+.name-and {
+}
+
+p {
+  font-family: var(--serif-font);
+  font-size: 1.25rem;
+}
+
+.divider.bottom {
+  transform: scaleY(-1)
+}
+
+.ab-symbol {
+  width: 6rem;
+}
