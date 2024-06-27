@@ -4,16 +4,21 @@
   --blue: #6495ED;
   --blue-light-100: #CCDDFF;
   --blue-light-200: #EBF2FF;
+
+  --cursive-font: "MonteCarlo", cursive;
+  --serif-font: "Noto Serif KR", serif;
 }
 
 body {
   background-color: var(--blue-light-200);
+  background-image: url("/images/background-a.jpg");
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
   color: var(--blue-dark-100);
 }
 
+/* experiments/image-card.html */
 .picture-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,13 +36,59 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .picture-block__banner {
-  font-size: 2rem;
-  font-family: "Playwrite US Trad", cursive;
+  font-size: 8vw;
+  font-family: var(--cursive-font);
   text-align: center;
   line-height: 150%;
   padding: 1rem;
   box-shadow: 0 0 10px 2px var(--blue-light-200);
-/*   box-shadow: 0 0 5px 1px var(--blue-dark-200); */
-  
   z-index: 2;
+}
+
+/* experiments/simple.html */
+header, main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 10vw;
+  gap: 1rem;
+}
+
+.header__image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 10rem;
+  width: 10rem;
+  margin: 0.5rem;
+  box-shadow: 0 2.5px 5px 2px var(--blue-dark-200);
+}
+
+header p {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+header h1 {
+  font-family: var(--cursive-font);
+  text-align: center;
+  font-size: 3rem;
+  line-height: 100%;
+  padding: 0.5rem 0;
+  letter-spacing: -0.05rem;
+}
+
+.name-and {
+}
+
+p {
+  font-family: var(--serif-font);
+  font-size: 1.25rem;
+}
+
+.divider.bottom {
+  transform: scaleY(-1)
+}
+
+.ab-symbol {
+  width: 6rem;
 }
