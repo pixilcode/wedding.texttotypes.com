@@ -11,9 +11,21 @@
 
 body {
   background-color: var(--blue-light-200);
-  background-image: url("/images/background-a.jpg");
+  background-image: url("/images/background.jpg");
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
   color: var(--blue-dark-100);
+}
+
+@media print {
+	:root {
+		--page-width: 5in;
+    --page-height: 7in;
+	}
+
+	body {
+		width: var(--page-width);
+		height: var(--page-height);
+	}
 }

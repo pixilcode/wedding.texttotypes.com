@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+
+<!--
+PRINTING INSTRUCTIONS:
+- Print to PDF with Firefox
+  - Destination: Save to PDF
+  - Orientation: Portrait
+  - Pages: All
+  - Paper Size: A4
+  - Scale: Fit to page width
+  - Pages per sheet: 1
+  - Margins: None
+  - Options:
+    - [ ] Print headers and footers
+    - [x] Print backgrounds
+- Open the PDF in PDF Arranger
+  - Crop margins
+    - Left: 0.0%
+	- Right: 39.7%
+	- Top: 0.0%
+	- Bottom: 40.2%
+  - Save
+-->
+
 <html>
 <head>
 	<title>Wedding Invitation - Amy and Brendon Bown</title>
@@ -8,11 +31,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- favicon -->
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="/favicon/favicon.png">
 
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/css.style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/image-card.css">
 
 	<!-- fonts -->
@@ -28,7 +52,10 @@
 		<div class="picture-block__image half-screen portrait">
 			<img class="portrait" src="/images/ring.jpg" alt="A close-up of the engagement ring">
 		</div>
-		<h1 class="picture-block__banner">Amy and Brendon Bown</h1>
+		<div class="picture-block__banner">
+			<!-- TODO: maybe add leaves to the sides -->
+			<h1 class="picture-block__banner">Amy and Brendon</h1>
+		</div>
 		<div class="picture-block__image full-screen">
 			<img class="landscape" src="/images/cherry-blossoms.jpg" alt="Amy and Brendon under a cherry tree">
 		</div>
