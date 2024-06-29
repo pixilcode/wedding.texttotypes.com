@@ -47,9 +47,12 @@ main.print { display: none; }
 
 @media print {
   body {
-    /* temporary visible border, delete for final print */
-    box-shadow: 0 0 10px 5px black;
-    padding: 0.25in;
+    box-sizing: content-box;
+    margin: 0.125in;
+    padding: 0.125in;
+    width: calc(var(--page-width) - 0.54in);
+    height: calc(var(--page-height) - 0.54in);
+    border: var(--blue-dark-100) 0.02in solid;
   }
 
   header, main, footer {
@@ -61,11 +64,11 @@ main.print { display: none; }
     height: 1in;
     width: 1in;
     margin: 0;
-    box-shadow: 0 0.01in 0.02in 0.01in var(--blue-dark-200);
+    box-shadow: 0 0.01in 0.04in 0.02in var(--blue-dark-200);
   }
   
   header {
-    gap: 0.1in;
+    gap: 0.08in;
   }
 
   header h1 {
@@ -79,8 +82,7 @@ main.print { display: none; }
 
   header p {
     font-family: var(--serif-font);
-    font-size: 12pt;
-    
+    font-size: 10pt;
   }
   
   main.print {
@@ -94,19 +96,24 @@ main.print { display: none; }
     text-align: center;
     font-size: 8pt;
   }
+  
+  main .simple-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1in;
+  }
 
-  main .date-time-location {
-    font-size: 10pt;
+  main .date-time, main .location {
+    font-size: 9pt;
     font-weight: bold;
     font-variant: small-caps;
-    margin: 0.125in;
   }
 
   main .divider-line {
     height: 80%;
     width: 0.02in;
     border-radius: 0.01in;
-    background-color: var(--blue-dark-100);
+    background-color: var(--blue-dark-200);
     opacity: 80%
   }
   
