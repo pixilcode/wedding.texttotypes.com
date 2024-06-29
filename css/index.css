@@ -42,6 +42,9 @@ p {
   width: 6rem;
 }
 
+/* disable print body */
+main.print { display: none; }
+
 @media print {
   body {
     /* temporary visible border, delete for final print */
@@ -125,10 +128,12 @@ p {
 
   .divider {
     height: 0.25in;
-/*     margin: 0.1in; */
   }
 
   .ab-symbol {
     width: 0.75in;
   }
+  
+  /* disable screen body */
+  main.screen { display: none; }
 }

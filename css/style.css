@@ -18,14 +18,6 @@ h1, h2, h3, h4, h5, h6, p, li {
   color: var(--blue-dark-100);
 }
 
-.print {
-  display: none;
-}
-
-.screen {
-  display: block;
-}
-
 @media print {
 	:root {
 		--page-width: 5in;
@@ -41,12 +33,4 @@ h1, h2, h3, h4, h5, h6, p, li {
 		width: var(--page-width);
 		height: var(--page-height);
 	}
-
-  .print {
-    display: block;
-  }
-  
-  .screen {
-    display: none;
-  }
 }
