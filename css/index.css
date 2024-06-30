@@ -43,7 +43,7 @@ p {
 }
 
 /* disable print body */
-main.print { display: none; }
+main.print, .print-background { display: none; }
 
 @media print {
   :root {
@@ -55,15 +55,22 @@ main.print { display: none; }
     padding: 0.125in;
   }
   
+  .print-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--page-width);
+    height: var(--page-height);
+    z-index: -1;
+  }
+  
   .body-wrapper {
     box-sizing: content-box;
     padding: 0.125in;
     width: var(--body-content-width);
     height: var(--body-content-height);
     border: var(--blue-dark-100) 0.02in solid;
-    
-    background-image: url("/images/print-background.png");
-    background-size: var(--page-width) var(--page-height);
   }
 
   header, main, footer {
