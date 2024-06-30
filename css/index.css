@@ -46,13 +46,24 @@ p {
 main.print { display: none; }
 
 @media print {
+  :root {
+    --body-content-width: calc(var(--page-width) - 0.54in);
+    --body-content-height: calc(var(--page-height) - 0.54in);
+  }
+  
   body {
-    box-sizing: content-box;
-    margin: 0.125in;
     padding: 0.125in;
-    width: calc(var(--page-width) - 0.54in);
-    height: calc(var(--page-height) - 0.54in);
+  }
+  
+  .body-wrapper {
+    box-sizing: content-box;
+    padding: 0.125in;
+    width: var(--body-content-width);
+    height: var(--body-content-height);
     border: var(--blue-dark-100) 0.02in solid;
+    
+    background-image: url("/images/print-background.png");
+    background-size: var(--page-width) var(--page-height);
   }
 
   header, main, footer {
