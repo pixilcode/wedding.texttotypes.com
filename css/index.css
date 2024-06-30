@@ -92,11 +92,15 @@ main.print, .print-background { display: none; }
 
   header h1 {
     font-family: var(--cursive-font);
-    font-size: 24pt;
+    font-size: 26pt;
     text-align: center;
     line-height: 100%;
     padding: 0 0;
     letter-spacing: -0.05rem;
+  }
+  
+  .names {
+    color: var(--blue-dark-200);
   }
 
   header p {
@@ -129,10 +133,10 @@ main.print, .print-background { display: none; }
   }
 
   main .divider-line {
-    height: 80%;
+    height: 50%;
     width: 0.005in;
     background-color: var(--blue-dark-100);
-    opacity: 80%
+    opacity: 50%
   }
   
   main .online-info {
