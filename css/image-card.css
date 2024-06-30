@@ -27,6 +27,14 @@
   justify-content: center;
 }
 
+.embellishment {
+  width: 20vw;
+}
+
+.embellishment.reversed {
+  transform: scaleX(-1);
+}
+
 .picture-block__banner h1 {
   font-size: 8vw;
   font-family: var(--cursive-font);
@@ -48,6 +56,14 @@
     box-shadow: none;
     grid-template-columns: 2.5in 2.5in;
     grid-template-rows: var(--image-height) var(--banner-height) var(--image-height);
+  }
+  
+  .embellishment {
+    width: 0.75in;
+  }
+  
+  .picture-block__banner {
+    gap: 0.125in;
   }
 
 	.picture-block__banner h1 {
