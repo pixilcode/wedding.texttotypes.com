@@ -130,9 +130,8 @@ main.print, .print-background { display: none; }
 
   main .divider-line {
     height: 80%;
-    width: 0.02in;
-    border-radius: 0.01in;
-    background-color: var(--blue-dark-200);
+    width: 0.005in;
+    background-color: var(--blue-dark-100);
     opacity: 80%
   }
   
