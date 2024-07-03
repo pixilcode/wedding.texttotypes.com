@@ -42,7 +42,10 @@
 		</header>
 		<main class="screen">
 			<section class="event-details">
-				<p>They request the honor of your presence at their reception</p>
+				<p>
+					Amy and Brendon, along with their families, request the
+					honor of your presence at their reception
+				</p>
 				<p class="date-time">
 					<time datetime="2024-07-26T19:00-0600">July 26<sup>th</sup>, 2024 @ 7-9pm</time><br>
 				</p>
@@ -57,11 +60,24 @@
 					<img class="arrow-icon" src="/images/icons/arrow-forward.svg" alt="An arrow icon">
 				</a>
 			</section>
+			<img class="subdivider" src="/images/subdivider.svg" alt="A decorative subdivider">
 			<section class="rsvp">
-				<p>Help us get an estimate guest count!</p>
+				<h2>RSVP</h2>
+				<p>
+					Help us get an estimate guest count! Will you be attending?
+					Will any friends and family be accompanying you? No worries
+					if you aren't 100% sure, we'd love to hear from you anyway!
+				</p>
+				<!-- TODO: get this form working correctly with JS -->
 				<form>
-					<input type="text" name="name" placeholder="Your Name">
-					<input type="number" name="guest_count" placeholder="Number of Guests">
+					<div>
+						<label for="name">Name</label>
+						<input type="text" name="name" placeholder="Your Name">
+					</div>
+					<div>
+						<label for="guest_count"># in Group </label>
+						<input type="number" name="guest_count" value="1">
+					</div>
 					<button type="submit">Send</button>
 				</form>
 			</section>
