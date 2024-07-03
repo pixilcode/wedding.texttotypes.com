@@ -1,3 +1,5 @@
+/*** GENERIC ***/
+
 header, main, footer {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,16 @@ header, main, footer {
   margin: 2rem 10vw;
   gap: 1rem;
 }
+
+p, a {
+  font-family: var(--serif-font);
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/*** HEADER ***/
 
 .header__image {
   border-radius: 50%;
@@ -29,18 +41,86 @@ header h1 {
   letter-spacing: -0.05rem;
 }
 
-p {
-  font-family: var(--serif-font);
-  font-size: 1.25rem;
-}
 
 .divider.bottom {
   transform: scaleY(-1)
 }
 
+/*** EVENT DETAILS ***/
+
+section.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.date-time, .location {
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+/*** DRIVING INSTRUCTIONS LINK ***/
+
+a.driving-instructions-link {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  
+  text-decoration: none;
+  background-image: url("/images/background-dark.jpg");
+  color: #0d2859;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  font-weight: 900;
+  
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  
+  box-shadow: 0 0 4px 1px var(--shadow-grey);
+  transition: box-shadow 0.15s ease;
+}
+
+
+a.driving-instructions-link:hover {
+  box-shadow: 0 0 8px 1px var(--shadow-grey);
+}
+
+a.driving-instructions-link .compass-icon {
+  height: 2.5rem;
+}
+
+a.driving-instructions-link .label {
+  /* center the text visually */
+  margin-bottom: 0.35rem;
+}
+
+a.driving-instructions-link .arrow-icon {
+  height: 2rem;
+}
+
+/*** RSVP CARD ***/
+
+section.rsvp {
+  
+}
+
+section.rsvp input {
+  font-family: var(--serif-font);
+}
+
+/*** FOOTER ***/
+
+
 .ab-symbol {
   width: 6rem;
 }
+
+/*** PRINT FORMATTING ***/
 
 /* disable print body */
 main.print, .print-background { display: none; }

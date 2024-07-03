@@ -19,7 +19,7 @@
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+KR&family=Noto+Serif+KR:wght@700&family=Noto+Serif+KR:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="body-wrapper">
@@ -41,14 +41,37 @@
 			<img class="divider bottom" src="/images/divider.svg" alt="A decorative divider">
 		</header>
 		<main class="screen">
-
+			<section class="event-details">
+				<p>They request the honor of your presence at their reception</p>
+				<p class="date-time">
+					<time datetime="2024-07-26T19:00-0600">July 26<sup>th</sup>, 2024 @ 7-9pm</time><br>
+				</p>
+				<p class="location">
+					The Reserve<br>
+					1200 Towne Centre Blvd<br>
+					Provo, Utah 84601
+				</p>
+				<a class="driving-instructions-link" href="/driving-instructions">
+					<img class="compass-icon" src="/images/icons/compass.svg" alt="A compass icon">
+					<span class="label">Directions</span>
+					<img class="arrow-icon" src="/images/icons/arrow-forward.svg" alt="An arrow icon">
+				</a>
+			</section>
+			<section class="rsvp">
+				<p>Help us get an estimate guest count!</p>
+				<form>
+					<input type="text" name="name" placeholder="Your Name">
+					<input type="number" name="guest_count" placeholder="Number of Guests">
+					<button type="submit">Send</button>
+				</form>
+			</section>
 		</main>
 		<main class="print">
 			<section class="simple-details">
 				<p>They request the honor of your presence at their reception</p>
 				<!-- TODO: fill in date time info -->
 				<p class="date-time">
-					<datetime>July 26<sup>th</sup>, 2024 @ 7-9pm</datetime><br>
+					July 26<sup>th</sup>, 2024 @ 7-9pm<br>
 				</p>
 				<p class="location">
 					The Reserve<br>
