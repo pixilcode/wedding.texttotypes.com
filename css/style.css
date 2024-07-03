@@ -9,14 +9,24 @@
 
   --cursive-font: "MonteCarlo", cursive;
   --serif-font: "Noto Serif KR", serif;
+  
+  
+  --background-light-color: var(--blue-light-200);
+  --background-light-img: url("/images/background.jpg");
+  
+  --background-dark-color: var(--blue-light-100);
+  --background-dark-img: url("/images/background-dark.jpg");
+  
+  --button-border-radius: 0.5rem;
+  --card-border-radius: 2rem;
 }
 
 body {
-  background-color: var(--blue-light-200);
-  background-image: url("/images/background.jpg");
+  background-color: var(--background-light-color);
+  background-image: var(--background-light-img);
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
+h1, h2, h3, h4, h5, h6, p, li, label {
   color: var(--blue-dark-100);
 }
 
