@@ -25,6 +25,7 @@
 		rel="stylesheet">
 </head>
 
+<!-- TODO: use watercolor flowers here -->
 <body>
 	<div class="body-wrapper">
 		<img src="/images/print-background.png" alt="A decorative background image" class="print-background">
@@ -46,7 +47,7 @@
 		</header>
 		<main class="screen">
 			<section class="event-details">
-				<p>
+				<p class="invitation">
 					Amy and Brendon, along with their families, request the
 					honor of your presence at their reception
 				</p>
@@ -66,23 +67,23 @@
 			</section>
 			<img class="subdivider" src="/images/subdivider.svg" alt="A decorative subdivider">
 			<section class="rsvp">
-				<h2>RSVP</h2>
+				<h2><img src="/images/icons/mail.svg" alt="A mail icon"> RSVP</h2>
 				<p>
 					Help us get an estimate guest count! Will you be attending?
-					Will any friends and family be accompanying you? No worries
-					if you aren't 100% sure, we'd love to hear from you anyway!
+					Will any friends and family be accompanying you? <b>No worries
+					if you aren't 100% sure</b>, we'd love to hear from you anyway!
 				</p>
 				<!-- TODO: get this form working correctly with JS -->
 				<form>
-					<div>
+					<div class="field name-input">
 						<label for="name">Name</label>
 						<input type="text" name="name" placeholder="Your Name">
 					</div>
-					<div>
+					<div class="field guest-count-input">
 						<label for="guest_count"># in Group </label>
 						<input type="number" name="guest_count" value="1">
 					</div>
-					<button type="submit">Send</button>
+					<button type="submit">Send <img src="/images/icons/send.svg" alt="A send icon"></button>
 				</form>
 			</section>
 		</main>

@@ -15,10 +15,6 @@ p, a, label, input {
   font-family: var(--serif-font);
 }
 
-p {
-  font-size: 1.25rem;
-}
-
 .divider {
   width: 15rem;
 }
@@ -41,6 +37,7 @@ p {
 header p {
   text-align: center;
   font-variant: small-caps;
+  font-size: 1.25rem;
 }
 
 header h1 {
@@ -70,9 +67,18 @@ section.event-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   
   text-align: center;
+}
+
+section.event-details p {
+  font-size: 1.25rem;
+  max-width: min(80vw, 32rem);
+}
+
+.invitation {
+  font-style: italic;
 }
 
 .date-time, .location {
@@ -81,11 +87,11 @@ section.event-details {
 }
 
 .date-time {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .location {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /*** DRIVING INSTRUCTIONS LINK ***/
@@ -137,11 +143,97 @@ section.rsvp {
   box-shadow: 0 0 8px 1px var(--shadow-grey);
   border-radius: var(--card-border-radius);
   padding: 2rem;
-  max-width: 80vw;
+  width: min(80vw, 25rem);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-section.rsvp label:after {
-  content: ':';
+section.rsvp h2 {
+  font-family: var(--serif-font);
+  font-weight: 700;
+  font-size: 2rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+section.rsvp h2 img {
+  height: 2.5rem;
+  /* center the text visually */
+  padding-top: 0.25rem;
+}
+
+section.rsvp p {
+  font-size: 1rem;
+}
+
+section.rsvp form {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+section.rsvp form div {
+  display: flex;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+section.rsvp .field label {
+  flex: 1;
+}
+
+section.rsvp .field input {
+  flex: auto;
+  max-width: 12.5rem;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  background-color: var(--white);
+  color: var(--blue-dark-100);
+  padding: 0.25rem;
+}
+
+section.rsvp .field input[type="number"] {
+  max-width: 4rem;
+}
+
+section.rsvp form button {
+  color: #0d2859;
+  font-family: var(--serif-font);
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  font-weight: 900;
+  
+  align-self: center;
+  
+  background-color: var(--background-dark-color);
+  background-image: var(--background-dark-img);
+  
+  border: none;
+  padding: 0.5rem .75rem;
+  border-radius: var(--button-border-radius);
+  
+  box-shadow: 0 0 4px 1px var(--shadow-grey);
+  transition: box-shadow 0.15s ease;
+  
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+section.rsvp form button:hover {
+    box-shadow: 0 0 8px 1px var(--shadow-grey);
+}
+
+section.rsvp form button img {
+  /* center the text visually */
+  padding-top: 0.25rem;
 }
 
 /*** FOOTER ***/
