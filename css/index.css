@@ -173,6 +173,16 @@ section.rsvp form button img {
   padding-top: 0.25rem;
 }
 
+section.rsvp .input-problem-message {
+  font-style: italic;
+  font-size: 1rem;
+  
+  max-width: 75%;
+  margin: 0.5rem;
+  text-align: center;
+  align-self: center;
+}
+
 section.rsvp .result-message {
   display: flex;
   flex-direction: column;

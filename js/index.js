@@ -1,5 +1,9 @@
 const rsvpForm = document.getElementById('rsvp-form')
 rsvpForm.addEventListener('submit', submitRsvp)
+rsvpForm.addEventListener('change', validateRsvp)
+
+const rsvpSendButton = rsvpForm.querySelector('.rsvp-send-button')
+rsvpForm.addEventListener('click', validateRsvp)
 
 const rsvpFormLoading = document.getElementById('rsvp-form-loading')
 const rsvpFormSuccess = document.getElementById('rsvp-form-success')
@@ -40,4 +44,60 @@ async function submitRsvp(event) {
 	rsvpFormSuccess.style.display = 'flex'
 
 	console.log('submitted RSVP successfully!')
+}
+
+const numberRegex = /^[1-9][0-9]*$/
+
+function checkFormIsValid(formData) {
+	const name = formData.get('name')
+	const guestCount = formData.get('guest_count')
+	const guestCountValue = parseInt(guestCount, 10)
+
+	if (name.length === 0) return 'NAME_REQUIRED'
+	if (!numberRegex.test(guestCount)) return 'GUEST_COUNT_INVALID'
+	if (guestCountValue < 1) return 'GUEST_COUNT_TOO_LOW'
+	if (guestCountValue > 30) return 'GUEST_COUNT_TOO_HIGH'
+	return 'OK'
+}
+
+function validateRsvp() {
+	console.log('validating RSVP...')
+
+	const formData = new FormData(rsvpForm)
+
+	const formStatus = checkFormIsValid(formData)
+
+	if (formStatus === 'NAME_REQUIRED') {
+		displayInputProblem('Please enter your name')
+		return
+	}
+
+	if (formStatus === 'GUEST_COUNT_INVALID') {
+		displayInputProblem('Please enter a valid number of guests')
+		return
+	}
+
+	if (formStatus === 'GUEST_COUNT_TOO_LOW') {
+		displayInputProblem('Please enter at least one guest')
+		return
+	}
+
+	if (formStatus === 'GUEST_COUNT_TOO_HIGH') {
+		displayInputProblem('Please enter a maximum of 30 guests. For more guests, submit another RSVP.')
+		return
+	}
+
+	hideInputProblem();
+}
+
+const rsvpFormInputProblem = document.getElementById('rsvp-input-problem')
+
+function displayInputProblem(message) {
+	rsvpFormInputProblem.style.display = 'block'
+	rsvpFormInputProblem.innerText = message
+}
+
+function hideInputProblem() {
+	rsvpFormInputProblem.style.display = 'none'
+	rsvpFormInputProblem.innerText = ''
 }
