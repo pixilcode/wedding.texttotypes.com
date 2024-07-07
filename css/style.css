@@ -22,6 +22,10 @@
   --card-border-radius: 2rem;
 }
 
+* {
+  font-family: var(--serif-font);
+}
+
 body {
   background-color: var(--background-light-color);
   background-image: var(--background-light-img);
