@@ -1,29 +1,8 @@
-/*** GENERIC ***/
+/*** HEADER ***/
 
-header, main, footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 10vw;
-}
-
-header, footer {
+header {
   gap: 1rem;
 }
-
-p, a, label, input {
-  font-family: var(--serif-font);
-}
-
-.divider {
-  width: 15rem;
-}
-
-.subdivider {
-  width: 10rem;
-}
-
-/*** HEADER ***/
 
 .header__image {
   border-radius: 50%;
@@ -47,11 +26,6 @@ header h1 {
   line-height: 100%;
   padding: 0.5rem 0;
   letter-spacing: -0.05rem;
-}
-
-
-.divider.bottom {
-  transform: scaleY(-1)
 }
 
 /*** MAIN ***/
@@ -197,12 +171,6 @@ section.rsvp .field input[type="number"] {
 section.rsvp form button img {
   /* center the text visually */
   padding-top: 0.25rem;
-}
-
-/*** FOOTER ***/
-
-.ab-symbol {
-  width: 6rem;
 }
 
 /*** PRINT FORMATTING ***/

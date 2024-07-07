@@ -11,7 +11,6 @@
   --cursive-font: "MonteCarlo", cursive;
   --serif-font: "Noto Serif KR", serif;
   
-  
   --background-light-color: var(--blue-light-200);
   --background-light-img: url("/images/background.jpg");
   
@@ -20,6 +19,8 @@
   
   --button-border-radius: 0.5rem;
   --card-border-radius: 2rem;
+  
+  --standard-page-width: min(80vw, 25rem);
 }
 
 * {
@@ -30,6 +31,17 @@
 body {
   background-color: var(--background-light-color);
   background-image: var(--background-light-img);
+}
+
+header, main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 10vw;
+}
+
+footer {
+  gap: 1rem;
 }
 
 button, a {
@@ -59,9 +71,30 @@ button, a {
   gap: 0.5rem;
 }
 
+p {
+  letter-spacing: 0.025rem;
+}
+
 button:hover, a:hover {
     box-shadow: 0 0 8px 1px var(--shadow-grey);
 }
+
+.divider {
+  width: 15rem;
+}
+
+.subdivider {
+  width: 10rem;
+}
+
+.divider.bottom {
+  transform: scaleY(-1)
+}
+
+.ab-symbol {
+  width: 6rem;
+}
+
 
 @media print {
 	:root {

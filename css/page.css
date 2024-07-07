@@ -1,0 +1,37 @@
+:root {
+	--mall-map-background-color: #ffffff;
+}
+
+header {
+	gap: 0.5rem;
+}
+
+main > img, main > p {
+	width: var(--standard-page-width);
+}
+
+h1 {
+	font-weight: 900;
+}
+
+.main-page-link {
+	align-self: start;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+}
+
+.main-page-link img {
+	height: 1.25rem;
+}
+
+main {
+	gap: 1.5rem;
+}
+
+.mall-map {
+	background-color: var(--mall-map-background-color);
+	padding: 1rem;
+	
+	border-radius: var(--card-border-radius);
+	box-shadow: 0 0 8px 1px var(--shadow-grey);
+}
