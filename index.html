@@ -23,6 +23,9 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+KR&family=Noto+Serif+KR:wght@700&family=Noto+Serif+KR:wght@900&display=swap"
 		rel="stylesheet">
+
+	<!-- scripts -->
+	<script src="/js/index.js" defer></script>
 </head>
 
 <!-- TODO: use watercolor flowers here -->
@@ -74,7 +77,7 @@
 					if you aren't 100% sure</b>, we'd love to hear from you anyway!
 				</p>
 				<!-- TODO: get this form working correctly with JS -->
-				<form action="/api/rsvp" method="post" enctype="application/x-www-form-urlencoded">
+				<form id="rsvp-form" action="/api/rsvp" method="post" enctype="application/x-www-form-urlencoded">
 					<div class="field name-input">
 						<label for="name">Name</label>
 						<input type="text" name="name" placeholder="Your Name">
@@ -85,6 +88,20 @@
 					</div>
 					<button type="submit">Send <img src="/images/icons/send.svg" alt="A send icon"></button>
 				</form>
+				<div id="rsvp-form-loading" class="result-message" style="display: none">
+					<div class="loading-bar-wrapper"><div class="loading-bar"></div></div>
+					<p>Sending...</p>
+				</div>
+				<div id="rsvp-form-error" class="result-message" style="display: none">
+					<img src="/images/icons/exclamation-with-circle.svg" alt="An exclamation icon">
+					<p>
+						There was an error sending your RSVP. Please refresh the page or try again later.
+					</p>
+				</div>
+				<div id="rsvp-form-success" class="result-message" style="display: none">
+					<img src="/images/icons/check-with-circle.svg" alt="A checkmark icon">
+					<p>Thank you for your RSVP!</p>
+				</div>
 			</section>
 			<section class="registry card">
 				<h2><img src="/images/icons/gift.svg" alt="A gift icon"> Registry</h2>
