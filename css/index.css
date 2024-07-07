@@ -135,9 +135,9 @@ a.driving-instructions-link .arrow-icon {
   height: 2rem;
 }
 
-/*** RSVP CARD ***/
+/*** GENERIC CARD ***/
 
-section.rsvp {
+section.card {
   background-color: var(--background-light-color);
   background-image: var(--background-light-img);
   box-shadow: 0 0 8px 1px var(--shadow-grey);
@@ -150,7 +150,7 @@ section.rsvp {
   gap: 1.5rem;
 }
 
-section.rsvp h2 {
+section.card h2 {
   font-family: var(--serif-font);
   font-weight: 700;
   font-size: 2rem;
@@ -161,15 +161,51 @@ section.rsvp h2 {
   gap: 0.75rem;
 }
 
+section.card p {
+  font-size: 1rem;
+}
+
+section.card a {
+  color: #0d2859;
+  font-family: var(--serif-font);
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  font-weight: 900;
+  text-decoration: none;
+  
+  align-self: center;
+  
+  background-color: var(--background-dark-color);
+  background-image: var(--background-dark-img);
+  
+  border: none;
+  padding: 0.5rem .75rem;
+  border-radius: var(--button-border-radius);
+  
+  box-shadow: 0 0 4px 1px var(--shadow-grey);
+  transition: box-shadow 0.15s ease;
+  
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+section.card a:hover {
+    box-shadow: 0 0 8px 1px var(--shadow-grey);
+}
+
+section.card a img {
+  padding-top: 0.125rem;
+}
+
+/*** RSVP CARD ***/
+
 section.rsvp h2 img {
   height: 2.5rem;
   /* center the text visually */
   padding-top: 0.25rem;
 }
 
-section.rsvp p {
-  font-size: 1rem;
-}
 
 section.rsvp form {
   align-self: center;
@@ -234,6 +270,13 @@ section.rsvp form button:hover {
 section.rsvp form button img {
   /* center the text visually */
   padding-top: 0.25rem;
+}
+
+/*** REGISTRY CARD ***/
+
+section.registry h2 img {
+  height: 2.25rem;
+  /* center the text visually */
 }
 
 /*** FOOTER ***/
