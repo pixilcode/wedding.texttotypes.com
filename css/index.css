@@ -97,29 +97,9 @@ section.event-details p {
 /*** DRIVING INSTRUCTIONS LINK ***/
 
 a.driving-instructions-link {
-  display: flex;
-  flex-direction: row;
   gap: 1rem;
-  align-items: center;
-  
-  text-decoration: none;
-  background-color: var(--background-dark-color);
-  background-image: var(--background-dark-img);
-  color: #0d2859;
   font-size: 1.5rem;
-  font-variant: small-caps;
-  font-weight: 900;
-  
   padding: 1rem 1.5rem;
-  border-radius: var(--button-border-radius);
-  
-  box-shadow: 0 0 4px 1px var(--shadow-grey);
-  transition: box-shadow 0.15s ease;
-}
-
-
-a.driving-instructions-link:hover {
-  box-shadow: 0 0 8px 1px var(--shadow-grey);
 }
 
 a.driving-instructions-link .compass-icon {
@@ -169,36 +149,6 @@ section.card p {
   font-size: 1rem;
 }
 
-section.card a {
-  color: #0d2859;
-  font-family: var(--serif-font);
-  font-size: 1.25rem;
-  font-variant: small-caps;
-  font-weight: 900;
-  text-decoration: none;
-  
-  align-self: center;
-  
-  background-color: var(--background-dark-color);
-  background-image: var(--background-dark-img);
-  
-  border: none;
-  padding: 0.5rem .75rem;
-  border-radius: var(--button-border-radius);
-  
-  box-shadow: 0 0 4px 1px var(--shadow-grey);
-  transition: box-shadow 0.15s ease;
-  
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-section.card a:hover {
-    box-shadow: 0 0 8px 1px var(--shadow-grey);
-}
-
 section.card a img {
   padding-top: 0.125rem;
 }
@@ -244,43 +194,10 @@ section.rsvp .field input[type="number"] {
   max-width: 4rem;
 }
 
-section.rsvp form button {
-  color: #0d2859;
-  font-family: var(--serif-font);
-  font-size: 1.25rem;
-  font-variant: small-caps;
-  font-weight: 900;
-  
-  align-self: center;
-  
-  background-color: var(--background-dark-color);
-  background-image: var(--background-dark-img);
-  
-  border: none;
-  padding: 0.5rem .75rem;
-  border-radius: var(--button-border-radius);
-  
-  box-shadow: 0 0 4px 1px var(--shadow-grey);
-  transition: box-shadow 0.15s ease;
-  
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-section.rsvp form button:hover {
-    box-shadow: 0 0 8px 1px var(--shadow-grey);
-}
-
 section.rsvp form button img {
   /* center the text visually */
   padding-top: 0.25rem;
 }
-
-
-/*** NOTE CARD ***/
-
-/*** STORY CARD ***/
 
 /*** FOOTER ***/
 

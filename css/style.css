@@ -35,6 +35,37 @@ h1, h2, h3, h4, h5, h6, p, li, label {
   color: var(--blue-dark-100);
 }
 
+button, a {
+  color: #0d2859;
+  font-family: var(--serif-font);
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  font-weight: 900;
+  text-decoration: none;
+  
+  align-self: center;
+  
+  padding: 0.5rem .75rem;
+  
+  background-color: var(--background-dark-color);
+  background-image: var(--background-dark-img);
+  
+  border: none;
+  border-radius: var(--button-border-radius);
+  
+  box-shadow: 0 0 4px 1px var(--shadow-grey);
+  transition: box-shadow 0.15s ease;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button:hover, a:hover {
+    box-shadow: 0 0 8px 1px var(--shadow-grey);
+}
+
 @media print {
 	:root {
 		--page-width: 5in;
