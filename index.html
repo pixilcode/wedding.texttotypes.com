@@ -81,7 +81,7 @@
 					</div>
 					<div class="field guest-count-input">
 						<label for="guest_count"># in Group </label>
-						<input type="number" name="guest_count" value="1">
+						<input type="number" name="guest_count" value="1" min="1" max="30">
 					</div>
 					<button type="submit">Send <img src="/images/icons/send.svg" alt="A send icon"></button>
 				</form>
@@ -90,10 +90,34 @@
 				<h2><img src="/images/icons/gift.svg" alt="A gift icon"> Registry</h2>
 				<p>
 					Your friendship is the only gift we'll ever need! But hey,
-					if you want to gift us something more, we won't complain!
+					if you want to gift us something more, we won't complain.
 				</p>
 				<a href="https://www.amazon.com/wedding/share/Amy_Brendon_Bown">
 					<span>Registry</span>
+					<img src="/images/icons/arrow-forward.svg" alt="An arrow icon">
+				</a>
+			</section>
+			<!-- TODO: make note API and web page, then remove 'display: none'-->
+			<section class="note card" style="display: none">
+				<h2><img src="/images/icons/write.svg" alt="An icon of a writing utensil"> Note</h2>
+				<p>
+					Can't make it to the wedding? No problem! A brief little
+					note would do our souls some good, too!
+				</p>
+				<a href="/note">
+					<span>Leave a note</span>
+					<img src="/images/icons/arrow-forward.svg" alt="An arrow icon">
+				</a>
+			</section>
+			<!-- TODO: make story page, then remove 'display: none'-->
+			<section class="story card" style="display: none">
+				<h2><img src="/images/icons/book.svg" alt="A book icon"> Our Story</h2>
+				<p>
+					Have you heard of our passion for swords and medieval garb?
+					Did you know that that's where it all started?
+				</p>
+				<a href="/our-story"">
+					<span>Our story</span>
 					<img src="/images/icons/arrow-forward.svg" alt="An arrow icon">
 				</a>
 			</section>
