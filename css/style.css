@@ -24,15 +24,12 @@
 
 * {
   font-family: var(--serif-font);
+  color: var(--blue-dark-100);
 }
 
 body {
   background-color: var(--background-light-color);
   background-image: var(--background-light-img);
-}
-
-h1, h2, h3, h4, h5, h6, p, li, label {
-  color: var(--blue-dark-100);
 }
 
 button, a {
