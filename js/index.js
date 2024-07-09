@@ -90,7 +90,7 @@ function validateRsvp() {
 	hideInputProblem();
 }
 
-const rsvpFormInputProblem = document.getElementById('rsvp-input-problem')
+const rsvpFormInputProblem = rsvpForm.querySelector('.input-problem-message')
 
 function displayInputProblem(message) {
 	rsvpFormInputProblem.style.display = 'block'
