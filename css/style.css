@@ -83,12 +83,16 @@ button:hover, a:hover {
   width: 15rem;
 }
 
+.divider.bottom {
+  transform: scaleY(-1)
+}
+
 .subdivider {
   width: 10rem;
 }
 
-.divider.bottom {
-  transform: scaleY(-1)
+.dot-divider {
+  width: 2.5rem;
 }
 
 .ab-symbol {

@@ -51,21 +51,35 @@ section.event-details p {
   max-width: min(80vw, 32rem);
 }
 
-.invitation {
+section.event-details .invitation {
   font-style: italic;
 }
 
-.date-time, .location {
+section.event-details .date-time, .location {
   font-variant: small-caps;
   font-weight: 700;
 }
 
-.date-time {
+section.event-details .date-time {
   margin-top: 1rem;
 }
 
-.location {
+section.event-details .location {
   margin-bottom: 2rem;
+}
+
+section.event-details .extra-info {
+  margin-top: 2rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+section.event-details .extra-info p {
+  font-style: italic;
+  font-size: 1rem;
 }
 
 /*** DRIVING INSTRUCTIONS LINK ***/
