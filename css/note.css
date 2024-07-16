@@ -6,10 +6,6 @@ main > * {
   text-align: center;
 }
 
-form.unloaded {
-	display: none;
-}
-
 .loading-message {
 	display: flex;
   flex-direction: column;

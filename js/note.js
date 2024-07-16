@@ -61,8 +61,10 @@ function setLoadingMessage(message) {
 fetch(noteFormApi)
 	.then(response => response.text())
 	.then(html => {
-		hideLoadingMessage()
 		form.outerHTML = html
+
+		loadingMessage.style.display = 'none'
+		form.style.display = undefined
 	})
 	.catch(error => {
 		console.error(error)
