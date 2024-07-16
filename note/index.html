@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Leave a note - Amy and Brendon Bown</title>
+	<title>Leave a Note - Amy and Brendon Bown</title>
 
 	<!-- meta -->
 	<meta charset="utf-8">
@@ -15,16 +14,57 @@
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/page.css">
+	<link rel="stylesheet" type="text/css" href="/css/note.css">
 
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Noto+Serif+KR:wght@700&family=Noto+Serif+KR:wght@900&display=swap"
 		rel="stylesheet">
+	
+	<!-- scripts -->
+	<script src="/js/note.js" defer></script>
 </head>
-
 <body>
-	<p>Work in progress! Check back later!</p>
+	<header>
+		<a class="main-page-link" href="/"><img src="/images/icons/arrow-backward.svg"> Main Page</a>
+		<img class="divider top" src="/images/divider.svg" alt="A decorative divider">
+		<h1>Leave a Note</h1>
+		<img class="divider bottom" src="/images/divider.svg" alt="A decorative divider">
+	</header>
+
+	<main>
+		<p class="intro">
+			Can't make it? No worries! Leave a note of well-wishes, along with
+			an optional picture! We'll make sure it gets into the guest book.
+		</p>
+		<img class="subdivider" src="/images/subdivider.svg" alt="A decorative subdivider">
+		<form class="unloaded" style="display: none"></form>
+		<div class="loading-message">
+			<div class="loading-bar-wrapper"><div class="loading-bar"></div></div>
+			<p>Loading form...</p>
+		</div>
+		<div class="success-message" style="display: none">
+			<img src="/images/icons/check-with-circle.svg" alt="A checkmark icon">
+			<p>
+				Thank you for your note! We'll make sure it gets into the guest
+				book.
+			</p>
+		</div>
+		<div class="error-message" style="display: none">
+			<img src="/images/icons/exclamation-with-circle.svg" alt="An exclamation icon">
+			<p>
+				There was an error submitting your note. Please refresh the page
+				or try again later.
+			</p>
+		</div>
+	</main>
+
+	<footer>
+		<img class="divider top" src="/images/divider.svg" alt="A decorative divider">
+		<img class="ab-symbol" src="/images/symbol/symbol-simple-color.svg"
+			alt="A calligraphy A and B encircled by two leaf branches">
+	</footer>
 </body>

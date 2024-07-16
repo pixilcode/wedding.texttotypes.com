@@ -28,6 +28,8 @@ main {
 	gap: 1.5rem;
 }
 
+/*** DIRECTIONS PAGE ***/
+
 .mall-map {
 	background-color: var(--mall-map-background-color);
 	padding: 1rem;

@@ -1,0 +1,49 @@
+main > * {
+  width: min(80vw, 25rem);
+}
+
+.intro {
+  text-align: center;
+}
+
+.loading-message {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  
+  font-style: italic;
+  
+  padding: 0.25rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+}
+
+form .field {
+  grid-column: span 2;
+  
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+form .note textarea {
+  min-height: 20rem;
+}
+
+form .user-image input {
+  background: none;
+  border: none;
+}
+
+form button {
+  grid-column: span 2;
+  justify-self: center;
+}
