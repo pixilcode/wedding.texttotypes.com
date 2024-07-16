@@ -1,0 +1,18 @@
+main > * {
+  width: min(80vw, 25rem);
+}
+
+form.unloaded {
+	display: none;
+}
+
+.loading-message {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  
+  font-style: italic;
+  
+  padding: 0.25rem;
+}

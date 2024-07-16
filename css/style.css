@@ -99,6 +99,37 @@ button:hover, a:hover {
   width: 6rem;
 }
 
+.loading-bar-wrapper {
+  height: 0.5rem;
+  width: 75%;
+  border-radius: 0.25rem;
+}
+
+.loading-bar {
+  display: block;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--blue-dark-100);
+  
+  animation: 2.5s ease-in-out alternate infinite bounce;
+}
+
+@keyframes bounce {
+  0% {
+    margin-left: 0%;
+    width: 10%;
+  }
+  
+  50% {
+    margin-left: 30%;
+    width: 40%;
+  }
+  
+  100% {
+    margin-left: 90%;
+    width: 10%;
+  }
+}
 
 @media print {
 	:root {
