@@ -48,6 +48,20 @@ async function submitNote(event) {
 	console.log('submitted note successfully!')
 }
 
+function validateNote() {
+	const formData = new FormData(form)
+
+	const name = formData.get('name')
+	const message = formData.get('message')
+
+	const nameValid = name.length > 0
+	const messageValid = message.length > 0
+
+	const formValid = nameValid && messageValid
+
+	console.error('TODO: implement form validation')
+}
+
 function setLoadingMessage(message) {
 	console.log('setting loading message...')
 	
