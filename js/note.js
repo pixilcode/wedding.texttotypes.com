@@ -15,7 +15,7 @@ function setLoadingMessage(message) {
 function hideLoadingMessage() {
 	console.log('hiding loading message...')
 
-	loadingMessage.display = 'none'
+	loadingMessage.style.display = 'none'
 
 	console.log('loading message hidden')
 }
@@ -23,7 +23,7 @@ function hideLoadingMessage() {
 function showLoadingMessage() {
 	console.log('showing loading message...')
 
-	loadingMessage.display = 'flex'
+	loadingMessage.style.display = 'flex'
 
 	console.log('loading message shown')
 }
