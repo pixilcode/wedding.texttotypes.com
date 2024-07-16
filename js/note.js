@@ -1,12 +1,7 @@
 const noteFormApi = '/api/note/form'
 
-const form = document.querySelector('form')
-
-form.addEventListener('submit', submitNote)
-form.addEventListener('change', validateNote)
-
-const submitButton = form.querySelector('button')
-submitButton.addEventListener('click', validateNote)
+let form;
+let submitButton;
 
 const loadingMessage = document.querySelector('.loading-message')
 const successMessage = document.querySelector('.success-message')
@@ -75,10 +70,20 @@ function setLoadingMessage(message) {
 fetch(noteFormApi)
 	.then(response => response.text())
 	.then(html => {
+		// TODO: make form static, just get CSRF token for form
+		form = document.querySelector('form')
+
 		form.outerHTML = html
 
 		loadingMessage.style.display = 'none'
 		form.style.display = undefined
+
+		form.addEventListener('submit', submitNote)
+		form.addEventListener('change', validateNote)
+
+		submitButton = form.querySelector('button')
+		submitButton.addEventListener('click', validateNote)
+
 	})
 	.catch(error => {
 		console.error(error)
