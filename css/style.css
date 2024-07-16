@@ -79,6 +79,14 @@ button:hover, a:hover {
     box-shadow: 0 0 8px 1px var(--shadow-grey);
 }
 
+input {
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  background-color: var(--white);
+  color: var(--blue-dark-100);
+  padding: 0.25rem;
+}
+
 .divider {
   width: 15rem;
 }

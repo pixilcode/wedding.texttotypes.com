@@ -171,11 +171,6 @@ section.rsvp .field label {
 section.rsvp .field input {
   flex: auto;
   max-width: 12.5rem;
-  border: 1px solid var(--blue);
-  border-radius: 4px;
-  background-color: var(--white);
-  color: var(--blue-dark-100);
-  padding: 0.25rem;
 }
 
 section.rsvp .field input[type="number"] {
