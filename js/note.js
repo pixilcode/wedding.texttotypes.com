@@ -20,6 +20,7 @@ function showLoadingMessage() {
 fetch(noteFormApi)
 	.then(response => response.text())
 	.then(html => {
+		hideLoadingMessage()
 		unloadedForm.outerHTML = html
 	})
 	.catch(error => {
