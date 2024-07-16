@@ -1,6 +1,6 @@
 const noteFormApi = '/api/note/form'
 
-const unloadedForm = document.querySelector('form.unloaded')
+const form = document.querySelector('form')
 const loadingMessage = document.querySelector('.loading-message')
 
 function setLoadingMessage(message) {
@@ -33,7 +33,7 @@ fetch(noteFormApi)
 	.then(response => response.text())
 	.then(html => {
 		hideLoadingMessage()
-		unloadedForm.outerHTML = html
+		form.outerHTML = html
 	})
 	.catch(error => {
 		console.error(error)
