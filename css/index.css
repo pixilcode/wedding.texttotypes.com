@@ -170,6 +170,7 @@ section.rsvp .field label {
 
 section.rsvp .field input {
   flex: auto;
+  max-width: 12.5rem;
 }
 
 section.rsvp .field input[type="number"] {

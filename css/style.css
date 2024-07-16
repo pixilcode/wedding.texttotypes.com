@@ -80,7 +80,6 @@ button:hover, a:hover {
 }
 
 input, textarea {
-  max-width: 12.5rem;
   border: 1px solid var(--blue);
   border-radius: 4px;
   background-color: var(--white);
