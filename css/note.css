@@ -27,6 +27,10 @@ form {
   gap: 1rem;
 }
 
+form input, form textarea {
+  width: 100%;
+}
+
 form .field {
   grid-column: span 2;
   
