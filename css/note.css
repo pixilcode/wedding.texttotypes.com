@@ -34,6 +34,10 @@ form .field {
   grid-template-columns: subgrid;
 }
 
+form .note textarea {
+  min-height: 20rem;
+}
+
 form button {
   grid-column: span 2;
   justify-self: center;

@@ -79,7 +79,8 @@ button:hover, a:hover {
     box-shadow: 0 0 8px 1px var(--shadow-grey);
 }
 
-input {
+input, textarea {
+  max-width: 12.5rem;
   border: 1px solid var(--blue);
   border-radius: 4px;
   background-color: var(--white);
