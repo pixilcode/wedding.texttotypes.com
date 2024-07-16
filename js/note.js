@@ -4,16 +4,28 @@ const unloadedForm = document.querySelector('form.unloaded')
 const loadingMessage = document.querySelector('.loading-message')
 
 function setLoadingMessage(message) {
+	console.log('setting loading message...')
+	
 	const messageP = loadingMessage.querySelector('p')
 	messageP.textContent = message
+
+	console.log('loading message set')
 }
 
 function hideLoadingMessage() {
+	console.log('hiding loading message...')
+
 	loadingMessage.display = 'none'
+
+	console.log('loading message hidden')
 }
 
 function showLoadingMessage() {
+	console.log('showing loading message...')
+
 	loadingMessage.display = 'flex'
+
+	console.log('loading message shown')
 }
 
 // load the form
