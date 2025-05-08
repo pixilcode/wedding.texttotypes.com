@@ -23,9 +23,19 @@ async function submitRsvp(event) {
 	rsvpFormLoading.style.display = 'flex'
 
 	// send the request to the server
-	const response = await fetch('/api/rsvp', {
-		method: 'POST',
-		body: new URLSearchParams(formData),
+	// const response = await fetch('/api/rsvp', {
+	// 	method: 'POST',
+	// 	body: new URLSearchParams(formData),
+	// })
+
+	// mimic a request to the server
+	const response = await new Promise((resolve) => {
+		setTimeout(() => {
+			resolve({
+				status: 200,
+				statusText: 'OK',
+			})
+		}, 2000)
 	})
 
 	// if there was an error, log it to the console

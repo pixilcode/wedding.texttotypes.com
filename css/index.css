@@ -318,9 +318,13 @@ main.print, .print-background { display: none; }
   
   main a, main a:visited {
     color: var(--blue-dark-100);
-    font-weight: bold;
+    font-weight: normal;
     text-decoration: none;
-    font-size: 9pt
+    font-size: 9pt;
+    justify-content: center;
+    font-variant: initial;
+    background: none;
+    box-shadow: none;
   }
   
   main .qr-code {
